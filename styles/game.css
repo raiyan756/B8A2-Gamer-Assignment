@@ -126,6 +126,43 @@
   background: #4ec5f7;
   border: 0;
 }
+.game-img {
+  width: 13.375rem;
+  height: 13rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.game-text,
+p {
+  color: #534c64;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem; /* 150% */
+}
+#img-3 {
+  margin-left: -10px;
+}
+.games {
+  display: flex;
+  align-items: center;
+  max-width: 940px;
+  margin: 0 auto;
+}
+.online-game {
+  text-align: center;
+}
+.online-game h2 {
+  color: #0b0223;
+
+  font-family: Work Sans;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 /* media quary for small device */
 @media screen and (max-width: 576px) {
