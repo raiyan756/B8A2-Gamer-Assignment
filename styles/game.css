@@ -1,0 +1,136 @@
+* {
+  font-family: "Work Sans", sans-serif;
+}
+.banner-title {
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.img {
+  width: 5.37756rem;
+  height: 2.5rem;
+  margin-right: 8px;
+}
+.logo-img {
+  width: 2.11975rem;
+  height: 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.follow {
+  display: flex;
+  align-items: center;
+}
+.logo-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo-menu > .link,
+.follow-title {
+  margin: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #3c354f;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#youtube {
+  margin: 1rem;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 2px 7px;
+}
+.follow a {
+  padding: 4px;
+}
+.goat {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.goat-img {
+  width: 19.5rem;
+  height: 22.5rem;
+  flex-shrink: 0;
+}
+.goat-text {
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
+  background-image: url(rectangle4.png);
+}
+.goat-title {
+  color: #0b0223;
+
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+.goat-big {
+  margin-top: -5px;
+  font-size: 3.9375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.goat-small {
+  margin-top: -9px;
+  color: #534c64;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.btn-1 {
+  border-radius: 3rem;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  display: inline-flex;
+  padding: 1.3125rem 2.5rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border: 0;
+}
+.btn-2 {
+  display: inline-flex;
+  padding: 1.3125rem 2.5rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 3rem;
+  background: #4ec5f7;
+  border: 0;
+}
+
+/* media quary for small device */
+@media screen and (max-width: 576px) {
+  .banner,
+  .logo-menu {
+    flex-direction: column;
+  }
+}
