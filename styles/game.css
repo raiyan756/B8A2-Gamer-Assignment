@@ -132,7 +132,17 @@
   flex-shrink: 0;
   border-radius: 1rem;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  /*  */
+
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
 }
+.game-card:hover .game-img {
+  opacity: 0.7;
+}
+
 .game-text,
 p {
   color: #534c64;
@@ -151,6 +161,14 @@ p {
   max-width: 940px;
   margin: 0 auto;
 }
+.game-card {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc; /* Optional border for the cards */
+  border-radius: 5px; /* Optional border-radius for rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional box shadow for cards */
+}
 .online-game {
   text-align: center;
 }
@@ -162,6 +180,121 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.play-img-1 {
+  width: 20.67706rem;
+  height: 20.625rem;
+  flex-shrink: 0;
+}
+.play-img-2 {
+  width: 10.67706rem;
+  height: 10.625rem;
+  position: relative;
+  right: 390px;
+  bottom: -30px;
+}
+.play-title {
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem; /* 125% */
+}
+.play-des {
+  color: #534c64;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 166.667% */
+}
+.play {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.type .type-1 {
+  display: flex;
+}
+.type-1 p {
+  color: #0b0223;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 1rem;
+}
+.type-1:hover {
+  cursor: pointer;
+  border: 5px solid pink;
+  border-radius: 3.125rem;
+  background: #fff;
+}
+.type {
+  max-width: 1140px;
+  margin: 9rem auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo-footer {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.footer-title {
+  color: white;
+  font-size: 1.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer-menu {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.menu-des {
+  color: #fff;
+
+  padding: 1rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#foot {
+  padding: 1rem;
+}
+.footer-last-menu > p {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1rem;
+}
+.footer-last-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-end {
+  text-align: center;
+}
+.footer {
+  background-color: #0b0223;
 }
 
 /* media quary for small device */
