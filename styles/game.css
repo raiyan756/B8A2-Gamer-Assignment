@@ -1,6 +1,9 @@
 * {
   font-family: "Work Sans", sans-serif;
 }
+.G-clr {
+  color: rgb(255, 112, 134);
+}
 .banner-title {
   font-size: 2.8125rem;
   font-style: normal;
@@ -116,6 +119,7 @@
   align-items: flex-start;
   gap: 0.625rem;
   border: 0;
+  cursor: pointer;
 }
 .btn-2 {
   display: inline-flex;
@@ -125,6 +129,7 @@
   border-radius: 3rem;
   background: #4ec5f7;
   border: 0;
+  cursor: pointer;
 }
 .game-img {
   width: 13.375rem;
@@ -171,6 +176,7 @@ p {
 }
 .online-game {
   text-align: center;
+  margin-top: 4rem;
 }
 .online-game h2 {
   color: #0b0223;
@@ -210,10 +216,14 @@ p {
   font-weight: 400;
   line-height: 1.875rem; /* 166.667% */
 }
+.play-text {
+  padding-left: 200px;
+}
 .play {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 4rem;
 }
 .type .type-1 {
   display: flex;
@@ -302,5 +312,52 @@ p {
   .banner,
   .logo-menu {
     flex-direction: column;
+    align-items: start;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+  .follow {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  .goat {
+    flex-direction: column-reverse;
+  }
+  .goat-img {
+    margin-top: 2rem;
+    order: 2;
+  }
+  .goat-title {
+    font-size: 1rem;
+  }
+  .goat-big {
+    font-size: 3rem;
+  }
+  .games {
+    flex-direction: column;
+  }
+  .game-img {
+    height: auto;
+    width: auto;
+  }
+  .play {
+    flex-direction: column;
+    align-items: center;
+  }
+  .play-text {
+    padding: 0;
+  }
+  .play-title,
+  .play-des {
+    text-align: start;
+    font-size: 1rem;
+  }
+  * {
+    padding: 0;
   }
 }
